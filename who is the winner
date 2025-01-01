@@ -1,0 +1,15 @@
+this another question on finding the winner of circular game  .This is very interest one .
+goal:linear time complexity O(n)
+apporach : Since our goal is to done the work in linear time .For me whenever linear time complexity loops(iterative method) comes into mind .
+so using explaination part i come up with the below code:
+
+class Solution {
+    public int findTheWinner(int n, int k) {
+        int result=0;
+        for(int i=1;i<=n;i++)
+        {
+            result=(result+k)%i;
+        }
+        return result+1;
+    }
+}
